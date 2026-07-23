@@ -1,0 +1,25 @@
+Company: Nimbus Cloud Storage Pvt Ltd
+
+About Us:
+Nimbus Cloud Storage was founded in 2019. We provide secure cloud backup
+solutions for small businesses. Our headquarters is located in Kochi, Kerala.
+
+Refund Policy:
+Customers can request a full refund within 30 days of purchase if they are
+not satisfied with the service. Refunds are processed within 5-7 business
+days and are credited back to the original payment method.
+
+Support Hours:
+Our customer support team is available Monday to Saturday, 9 AM to 7 PM IST.
+Support can be reached via email at support@nimbuscloud.example or through
+the live chat widget on our website.
+
+Pricing Plans:
+1. Starter Plan: 100 GB storage, priced at 499 INR per month.
+2. Business Plan: 1 TB storage, priced at 1999 INR per month.
+3. Enterprise Plan: Custom storage limits, contact sales for pricing.
+
+Data Security:
+All customer data is encrypted using AES-256 encryption both at rest and
+in transit. We perform daily automated backups and store redundant copies
+across three geographically separate data centers.

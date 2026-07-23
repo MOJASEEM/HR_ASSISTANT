@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ledger — HR Policy Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="shell">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-mark"></span>
+      <div class="brand-text">
+        <h1></h1>
+        <p>HR Policy Assistant</p>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <p class="sidebar-label">How it answers</p>
+      <ul class="method-list">
+        <li><span class="dot dot-route"></span> Routes your question</li>
+        <li><span class="dot dot-grade"></span> Grades what it finds</li>
+        <li><span class="dot dot-verify"></span> Checks its own answer</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-section sidebar-footer">
+      <p class="sidebar-label">Status</p>
+      <p class="status-line"><span class="status-dot"></span> Connected</p>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <div class="chat-scroll" id="chatScroll">
+      <div class="empty-state" id="emptyState">
+        <span class="empty-mark">§</span>
+        <h2>Ask about company policy</h2>
+        <p>Every answer is checked against the source documents before it reaches you.</p>
+        <div class="suggestions">
+          <button class="suggestion-chip" data-q="What is the maternity leave policy?">Maternity leave policy</button>
+          <button class="suggestion-chip" data-q="How many paid sick days do I get?">Paid sick days</button>
+          <button class="suggestion-chip" data-q="What is the notice period for resignation?">Notice period</button>
+        </div>
+      </div>
+
+      <div class="messages" id="messages"></div>
+    </div>
+
+    <div class="composer">
+      <div class="trace-ledger" id="traceLedger" hidden>
+        <div class="trace-ticket" data-step="route">
+          <span class="trace-ticket-label">Router</span>
+          <span class="trace-ticket-value">—</span>
+        </div>
+        <div class="trace-ticket" data-step="retrieve">
+          <span class="trace-ticket-label">Retrieved</span>
+          <span class="trace-ticket-value">—</span>
+        </div>
+        <div class="trace-ticket" data-step="grade">
+          <span class="trace-ticket-label">Kept</span>
+          <span class="trace-ticket-value">—</span>
+        </div>
+        <div class="trace-ticket" data-step="verify">
+          <span class="trace-ticket-label">Verified</span>
+          <span class="trace-ticket-value">—</span>
+        </div>
+      </div>
+
+      <form class="input-row" id="chatForm">
+        <input
+          type="text"
+          id="questionInput"
+          placeholder="Ask a question about company policy…"
+          autocomplete="off"
+        />
+        <button type="submit" id="sendBtn">
+          <span>[]</span>
+        </button>
+      </form>
+    </div>
+
+  </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
