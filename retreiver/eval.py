@@ -1,16 +1,3 @@
-"""
-STEP 6 (polish): Automated evaluation for retrieval and generation.
-
-Retrieval Accuracy (Hit Rate) = did the retrieved chunks actually contain
-the expected answer, for each test question?
-
-Generation is scored two ways:
-  - Faithfulness: is the answer backed by the context (reuses your
-    existing check_hallucination logic)
-  - Correctness: does the answer match the expected reference answer
-    (LLM-as-judge comparison)
-"""
-
 import sys
 from pathlib import Path
 sys.path.append(str(Path(__file__).resolve().parent))
@@ -89,7 +76,6 @@ GOLDEN_DATASET = [
         "expected_keyword": "ethics policy",
         "reference_answer": "If you suspect a violation of our company's ethics policy, you should report it to the HR department or the designated ethics officer immediately."
   }
-    # Add 5-10 more real ones from your dataset here.
     # The more you add, the more trustworthy your final percentage is.
 ]
 
