@@ -62,7 +62,7 @@ def generate_answer(question, docs, llm):
 
 def get_llm():
     return ChatGroq(
-        model_name="llama-3.3-70b-versatile",
+        model_name=os.getenv("GROQ_MODEL", "openai/gpt-oss-20b"),
         groq_api_key=os.getenv("GROQ_API_KEY"),
         temperature=0.3
         
